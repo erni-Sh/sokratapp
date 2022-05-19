@@ -1,0 +1,70 @@
+//Этот файл вроде не нужен ??
+
+
+.partners__wrapper {
+  max-width: 1440px;
+  margin: 70px auto 50px;
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    padding-left: 16px;
+  }
+}
+
+.partners__title {
+  @media (max-width: $mobile) {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.partners__list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 95px 0 0;
+}
+
+.partners__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 190px;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(#000000, 0.1);
+
+  @media (max-width: $mobile) {
+    margin-right: 31px;
+    flex-basis: 190px;
+    flex-shrink: 0;
+  }
+}
+
+
+.partners__btn-next {
+  position: absolute;
+  top: calc(50% - 60px);
+  right: 0;
+  width: 20px;
+  height: 120px;
+  background-color: $black;
+  background-image: url('../../img/arrow-right-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: background-color .3s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $main-color;
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}

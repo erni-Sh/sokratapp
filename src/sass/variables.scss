@@ -1,0 +1,36 @@
+// colors
+$black: #24272D;
+$main-color: #00A7CF;
+$accent-color: #EF4864;
+$blue: #1fc0fc;
+$yellow: #ffc341;
+$white: #ffffff;
+$bg-light: #F3F4F9;
+$bg-menu-mobile: #F4F5F9;
+$gray: #666975;
+$light-gray: #4d4d4d;
+$gradient: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
+$border-icon-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+$text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+$buble-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+$btn-circle: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), #ffffff;
+$btn-normal: linear-gradient(142.39deg, #ffc341 20.46%, #ffd701 65.31%);
+$btn-hover: linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
+$btn-active: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #ffc341 -50.3%, #ffd701 63.1%);
+
+// borders
+$form-default: 2px solid #e3e3e3;
+$form-focus: 2px solid $yellow;
+$form-valid: 2px solid #484848;
+$form-invalid: 2px solid #ff0000;
+
+//fonts
+$body-font-size: 15px;
+$body-font-family: "Gotham pro", "Arial", sans-serif;
+
+// breakpoints
+$min-width: 320px;
+
+$desktop: 1366px;
+$tablet: 1024px;
+$mobile: 768px;

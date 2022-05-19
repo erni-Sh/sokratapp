@@ -1,0 +1,121 @@
+.main-page-swiper {
+  margin-top: 15px;
+
+  // @media (min-width: $mobile) {
+  //   margin-top: 30px;
+
+  // }
+
+}
+
+.main-page-swiper__loader {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 382px;
+  margin-bottom: 26px;
+
+  @media (max-width: $tablet){
+    height: 212px;
+    margin-bottom: 79px;
+  }
+}
+
+.main-page-swiper__wrapper {
+  position: relative;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  
+  @media (max-width: $mobile) {
+    padding: 0 16px;
+  }
+}
+
+.main-page-swiper__swiper {
+  position: relative;
+}
+
+.main-page-swiper__swiper .swiper-slide {
+  width: auto;
+}
+
+.main-page-swiper__swiper-slide {
+  display: block;
+  width: 303px;
+  height: 212px;
+  border-radius: 10px;
+  // background-image: url("../img/main-slider-placeholder-mobile.jpg");
+  // background-image: url("https://cdn.pixabay.com/photo/2021/12/11/19/21/breakfast-6863479_960_720.jpg");
+  background: $bg-light;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .main-page-swiper__swiper-slide-img {
+    width: 303px;
+    height: 212px;
+    object-fit: cover;
+    opacity: 0;
+    transition: 400ms ease all;
+  }
+  
+  .main-page-swiper__swiper-slide-img-visible {
+    opacity: 1;
+  }
+
+
+  @media (min-width: $mobile) {
+    width: 546px;
+    height: 382px;
+    // background-image: url("https://cdn.pixabay.com/photo/2021/12/11/19/21/breakfast-6863479_960_720.jpg");
+    .main-page-swiper__swiper-slide-img {
+      width: 546px;
+      height: 382px;
+    }
+  }
+
+}
+
+.main-page-swiper__pagination {
+  position: relative !important;
+  bottom: -25px;
+
+    @media (min-width: $desktop) {
+      bottom: -15px;
+    }
+
+    & .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: $black;
+      opacity: 1;
+      margin: 0 2.5px;
+    }
+    & .swiper-pagination-bullet-active {
+      background: $main-color;
+    }
+}
+
+// .main-page-swiper__swiper-wrapper {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 0 35px;
+
+//   @media (max-width: $mobile) {
+//     padding: 0;
+//     justify-content: flex-start;
+//   }
+// }
+
+// .swiper-wrapper:last-child {
+//   margin-right: 0;
+// }
+
+

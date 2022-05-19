@@ -1,0 +1,32 @@
+
+.download {
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+
+.download__title {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.download__btn-link {
+  text-decoration: none;
+}
+
+.download__btn-appstore-img {
+  width: auto;
+  height: 30px;
+}
+
+.download__btn-gplay-img {
+  margin-left: 20px;
+  width: auto;
+  height:30px;
+}

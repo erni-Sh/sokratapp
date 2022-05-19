@@ -1,0 +1,109 @@
+.category {
+  border-radius: 10px;
+
+  background-color: $white;
+  box-shadow: 0 0 16px rgba(#000000, 0.1);
+}
+
+.category__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $desktop) {
+    margin-left: 7px;
+    margin-right: 7px;
+    font: 700 20px/24px $body-font-family;
+  }
+  // margin-bottom: 19px;
+  // margin-top: 13px;
+  // padding-right: 18px;
+  // padding-left: 18px;
+
+  font-size: 20px;
+  line-height: 27px;
+  text-decoration: none;
+
+  color: $main-color;
+}
+
+.category__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 160px);
+  column-gap: 22px;
+  row-gap: 22px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.category__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+
+  @media (min-width: $desktop) {
+    top: 3px;
+    left: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+
+    display: none;
+    width: $category-list-item-size-mobile;
+    height: $category-list-item-size-mobile;
+    border-radius: 20px;
+
+    background-color: rgba($black, 0.4);
+
+    @media (min-width: $desktop) {
+      width: $category-list-item-size-desktop;
+      height: $category-list-item-size-desktop;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 5.5px;
+    top: 76px;
+
+    display: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background-image: url("../../img/checkmark.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+
+    @media (min-width: $desktop) {
+      width: 13px;
+      height: 13px;
+      top: 82px;
+    }
+  }
+}
+
+.category__img {
+  border-radius: 20px;
+}
+
+.category__input:checked + .category__label::after,
+.category__input:checked + .category__label::before {
+    display: block;
+}
+
+.category__name {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}

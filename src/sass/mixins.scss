@@ -1,0 +1,71 @@
+@mixin btn {
+  display: inline-block;
+  padding: 20px 40px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $white;
+  text-shadow: $text-shadow;
+  background: $btn-normal;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+@mixin btn-hover {
+  display: inline-block;
+  padding: 20px 40px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $white;
+  text-shadow: $text-shadow;
+  background: $btn-hover;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+@mixin btn-active {
+  display: inline-block;
+  padding: 20px 40px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: $white;
+  text-shadow: $text-shadow;
+  background: $btn-active;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+@mixin title {
+  margin-bottom: 70px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+@mixin title-mobile {
+  @include title;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

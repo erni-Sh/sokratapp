@@ -1,0 +1,53 @@
+.skill__title {
+  margin-top: 0;
+  margin-bottom: 13px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.skill__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  list-style: none;
+}
+
+.skill__item {
+  position: relative;
+
+  padding-top: 21px;
+  padding-bottom: 22px;
+  padding-left: 15px;
+  padding-right: 38px;
+  border: 1px solid $blue;
+  border-radius: 10px;
+
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  box-shadow: 0 0 16px rgba($black, 0.15);
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: calc(50% - 13px);
+    right: 13px;
+
+    width: 26px;
+    height: 26px;
+
+    background-image: url('../../img/mark.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

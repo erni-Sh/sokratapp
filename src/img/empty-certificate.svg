@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 504 361">
+  <defs>
+    <filter id="Изображение_6" x="0" y="0" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha" />
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feFlood flood-opacity="0.161" />
+      <feComposite operator="in" in2="blur" />
+      <feComposite in="SourceGraphic" />
+    </filter>
+  </defs>
+  <g id="Сгруппировать_9136" data-name="Сгруппировать 9136" transform="translate(-1177 -1299)">
+    <text id="нет_фото" data-name="нет фото" transform="translate(1373 1486)" fill="#24272d" font-size="20"
+      font-family="GothamPro-Bold, Gotham Pro" font-weight="700">
+      <tspan x="0" y="0">НЕТ ФОТО</tspan>
+    </text>
+    <g transform="matrix(1, 0, 0, 1, 1177, 1299)" filter="url(#Изображение_6)">
+      <g id="Изображение_6-2" data-name="Изображение 6" transform="translate(9 8)" fill="none"
+        stroke="#24272d" stroke-width="3" stroke-dasharray="19">
+        <rect width="486" height="343" rx="10" stroke="none" />
+        <rect x="1.5" y="1.5" width="483" height="340" rx="8.5" fill="none" />
+      </g>
+    </g>
+  </g>
+</svg>

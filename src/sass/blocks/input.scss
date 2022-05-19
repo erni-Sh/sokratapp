@@ -1,0 +1,46 @@
+.input {
+  padding-top: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  background-color: $white;
+  box-shadow: 0 0 16px 0 rgba($black, 0.1);
+}
+
+.input--pay {
+  border: 1px solid $blue;
+}
+
+.input__label {
+  display: block;
+  margin-bottom: 6px;
+
+  font-size: 10px;
+  line-height: 9px;
+  font-weight: 400;
+
+  color: $black;
+}
+
+.input__field {
+  width: 100%;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+
+  outline: none;
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.CarouselList {
+    display: block;
+}
+
+/*
+Fix slide height bug.
+https://github.com/nolimits4web/swiper/issues/2372
+*/
+.SwiperSlide {
+    display: flex;
+    height: auto;
+    /* Add vertical paddings for slide shadow visibility */
+    padding: 20px 10px;
+    width: auto;
+
+    /*border:  1px solid red;*/
+}
+
+/*
+All sliders has fixed width 1440px
+Need custom one(first slider on the main page)
+*/
+.Carousel {
+    width: calc(100% - 15px);
+    width: auto;
+}
+
+.CarouselImg {
+  width: 282px;
+  min-height: 151px;
+  object-fit: contain;
+}

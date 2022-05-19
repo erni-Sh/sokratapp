@@ -1,0 +1,188 @@
+.popup-app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba($bg-light, 0.6);
+  
+  z-index: 11;
+  transition: 250ms;
+}
+
+.popup-app--hidden {
+  // display: none;
+  opacity: 0;
+  visibility: hidden;
+  
+  .popup-app__block {
+    transform: translateY(-200%)
+  }
+}
+
+.popup-app__block {
+  position: relative;
+
+  max-width: 1228px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 106px;
+  padding-right: 116px;
+  padding-left: 620px;
+  padding-bottom: 107px;
+  border-radius: 10px;
+
+  background-color: $white;
+  background-image: url("../../img/phone-app.png");
+  background-repeat: no-repeat;
+  background-position: 65px 100%;
+
+  box-shadow: 0 0 29px 0 rgba($black, 0.1);
+  transition: 250ms;
+  @media (max-width: 1200px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-right: 70px;
+    padding-left: 400px;
+
+    background-size: 300px;
+    background-position: 30px 100%;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 30px;
+    padding-left: 260px;
+
+    background-size: 200px;
+    background-position: 30px 100%;
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 55px;
+    padding-bottom: 271px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    background-size: auto;
+    background-position: 100% 150%;
+  }
+}
+
+.popup-app__slogan {
+  margin-top: 0;
+  margin-bottom: 11px;
+
+  font-size: 29px;
+  line-height: 39px;
+  font-weight: 700;
+
+  @media (max-width: $mobile) {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 3px;
+  }
+}
+
+.popup-app__close {
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  width: 24px;
+  height: 24px;
+  border: none;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    right: 11px;
+
+    width: 2px;
+    height: 30px;
+    transform: rotate(45deg);
+
+    background-color: $black;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    right: 11px;
+
+    width: 2px;
+    height: 30px;
+    transform: rotate(-45deg);
+
+    background-color: $black;
+  }
+
+  &:focus,
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.popup-app__text {
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  font-size: 24px;
+  line-height: 38px;
+
+  @media (max-width: $mobile) {
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 45px;
+  }
+}
+
+.popup-app__links {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+
+.popup-app__img--store {
+  width: 200px;
+  height: 67px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 17px;
+  }
+}
+
+.popup-app__img--google {
+  width: 247px;
+  height: 67px;
+  object-fit: contain;
+
+  @media (max-width: $mobile) {
+    width: 200px;
+  }
+}

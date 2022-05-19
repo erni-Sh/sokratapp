@@ -1,0 +1,137 @@
+.popup-cookie-info {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  margin: auto;
+
+  z-index: 11;
+  background-color: rgba($bg-light, 0.6);
+}
+
+.popup-cookie-info--hidden {
+  display: none;
+}
+
+.popup-cookie-info__block {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  max-height: 576px;
+  max-width: 1228px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 63px;
+  padding-right: 16px;
+  padding-left: 59px;
+  padding-bottom: 51px;
+  border-radius: 10px;
+
+  background-color: $white;
+
+  box-shadow: 0 0 29px 0 rgba($black, 0.1);
+}
+
+.popup-cookie-info__title {
+  margin-top: 0;
+  margin-bottom: 18px;
+
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.popup-cookie-info__close {
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  width: 24px;
+  height: 24px;
+  border: none;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    right: 11px;
+
+    width: 2px;
+    height: 30px;
+    transform: rotate(45deg);
+
+    background-color: $black;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    right: 11px;
+
+    width: 2px;
+    height: 30px;
+    transform: rotate(-45deg);
+
+    background-color: $black;
+  }
+
+  &:focus,
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.popup-cookie-info__text {
+  position: relative;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 217px;
+
+  font-size: 20px;
+  line-height: 30px;
+
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-image: linear-gradient(to right, transparent 45%, $black 45%, $black 55%, transparent 55%);
+  }
+
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    border-radius: 10px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-right: 50px;
+  }
+
+  @media (max-width: $min-width) {
+    padding-right: 20px;
+  }
+}
+

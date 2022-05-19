@@ -1,0 +1,41 @@
+.main-slider__swiper {
+  overflow: visible;
+  margin-bottom: 20px;
+}
+
+.main-slider__pagination {
+    text-align: center;
+}
+
+.main-slider__slide {
+  width: auto;
+}
+
+.main-slider__link {
+  display: block;
+}
+
+.main-slider__img {
+  overflow: hidden;
+  object-fit: fill;
+  width: 700px;
+  height: 450px;
+  border-radius: 30px;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #24272D;
+}
+
+.swiper-pagination-bullet:hover {
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #00A7CF;
+}

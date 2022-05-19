@@ -1,0 +1,135 @@
+.search_drop_down {
+  position: absolute;
+  top: 75px;
+
+  left: 86px;
+  right: 10px;
+
+  max-width: 757px;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  box-shadow: 0 0 6px rgb(36 39 45 / 20%);
+
+
+  @media (max-width: $desktop) {
+    right: 10px;
+    left: 10px;
+  }
+
+  @media (max-width: $tablet) {
+    right: 0;
+    left: 50%;
+    width: calc(100vw - 20px);
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: $mobile) {
+    // width: 100%;
+  }
+
+}
+.search_drop_down__input-pading {
+  padding: 20px 0px 0px 20px;
+}
+.search_drop_down__input {
+  display: flex;
+  background-color: #f0f1f6;
+  border-radius: 10px;
+  max-width: 718px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search_drop_down__input input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.search_drop_down__input input:checked+label{
+  background-color: #00a7cf;
+  color: #ffffff;
+}
+.search_drop_down__input label {
+  max-width: 359px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.search_drop_down__text {
+  font-size: 18px;
+  color: #707070;
+  margin: 17px 0px 20px 20px;
+}
+
+.search_drop_down__not-found {
+  font-size: 18px;
+  margin: 17px 0px 20px 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.search_drop_down__item-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0px 20px 18px 20px;
+}
+.search_drop_down__info {
+  display: flex;
+  margin-top: 7px;
+}
+.search_drop_down__info_text {
+  margin: 0px 22px 0px 0px;
+}
+.search_drop_down__text-margin {
+  margin: 0px;
+}
+.search_drop_down__info p {
+  color: #707070;
+  font-weight: bold;
+}
+
+.search_drop_down__item-flex button {
+  background-color: #00a7cf;
+  border: none;
+  padding: 5px 11px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 4px;
+}
+.search_drop_down__item_text {
+  margin: 0px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.search_drop_down__look {
+  height: 44px;
+  background-color: #f0f1f6;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 0px 10px 10px;
+  text-decoration: none;
+}
+.search_drop_down__look p {
+  font-size: 16px;
+  color: #707070;
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+

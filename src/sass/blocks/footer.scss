@@ -1,0 +1,141 @@
+.footer {
+  padding-top: 80px;
+  background-color: $bg-light;
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+    min-height: 478px;
+  }
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-areas:
+    "list    logo"
+    "social  app";
+  row-gap: 5px;
+
+  max-width: 1460px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 29px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "list"
+      "logo"
+      "social"
+      "app";
+
+    margin-bottom: 25px;
+    padding-top: 7px;
+    padding-bottom: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-direction: column;
+  }
+}
+
+.footer__col-wrapper {
+  grid-area: list;
+
+  display: flex;
+  padding-top: 5px;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    margin-bottom: 19px;
+  }
+}
+
+.footer__socials {
+  grid-area: social;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 10px;
+    padding-top: 3px;
+  }
+}
+
+.footer__logo {
+  grid-area: logo;
+
+  padding-top: 0;
+  margin-right: 2px;
+
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+.footer__download {
+  grid-area: app;
+}
+
+.footer__nav-wrapper {
+  margin-right: 90px;
+
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__nav-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  @media (max-width: $mobile) {
+    margin-top: 0;
+    margin-bottom: 7px;
+
+    line-height: 20px;
+  }
+}
+
+.footer__nav-list {
+  @include list-reset;
+}
+
+.footer__nav-item {
+  margin-bottom: 2px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 0;
+
+    line-height: 20px;
+  }
+}
+
+.footer__nav-link {
+  color: $black;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+    text-decoration: underline;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+    margin-bottom: 7px;
+
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

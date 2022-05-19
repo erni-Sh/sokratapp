@@ -1,0 +1,26 @@
+.PartnersList{
+    display: block;
+}
+
+.SwiperSlide {
+    /* Add vertical paddings for slide shadow visibility */
+    padding: 20px 10px;
+    /*width: fit-content; */   
+}
+
+.PartnersItem {
+    transition: transform 0.3s;
+    /*width: fit-content;*/
+}
+
+.PartnersItem:hover {
+    transform: translateY(-10px);
+}
+
+.PartnersImg {
+  border-radius: 20px;
+  width: 193px;
+  min-height: 193px;
+  object-fit: contain;
+  box-shadow: 0 0 11px rgb(0 0 0 / 10%);
+}

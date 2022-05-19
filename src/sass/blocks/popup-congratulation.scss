@@ -1,0 +1,91 @@
+.popup-congratulation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  margin: auto;
+
+  z-index: 10;
+  background-color: rgba($bg-light, 0.6);
+}
+
+.popup-congratulation--hidden {
+  display: none;
+}
+
+.popup-congratulation__block {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  max-height: 654px;
+  margin-top: 30px;
+  max-width: 576px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 379px;
+  padding-right: 31px;
+  padding-left: 31px;
+  padding-bottom: 50px;
+  border-radius: 10px;
+
+  background-color: $white;
+  background-image:
+    url("../../img/icons/congratulation-logo.svg"),
+    url("../../img/icons/bubbles.svg");
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-position:
+    50% 202px,
+    59.5% 63px;
+
+  box-shadow: 0 0 29px 0 rgba($black, 0.1);
+}
+
+.popup-congratulation__title {
+  align-self: center;
+
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.popup-congratulation__gratitude {
+  align-self: center;
+  text-align: center;
+
+  max-width: 280px;
+  margin-top: 0;
+  margin-bottom: 46px;
+
+  font-size: 17px;
+  line-height: 26px;
+}
+
+
+.popup-congratulation__button {
+  display: block;
+
+  width: 100%;
+  padding-top: 17px;
+  padding-bottom: 19px;
+
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+
+  @media (max-width: $mobile) {
+    padding-top: 13px;
+    padding-bottom: 11px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

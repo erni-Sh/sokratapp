@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: $min-width;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: 26px;
+  overflow-x: hidden;
+  color: $black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.indicator {
+  position: absolute;
+  content: "";
+  background-color: $accent-color;
+  border-radius: 50%;
+}
+
+.main {
+  min-height: calc(100vh - 543px);
+}
+
+.container {
+  max-width: 1472px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (min-width: $desktop) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

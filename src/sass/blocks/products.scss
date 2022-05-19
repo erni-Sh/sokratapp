@@ -1,0 +1,131 @@
+.products {
+  display: grid;
+  grid-template-columns: 343px;
+  row-gap: 30px;
+  justify-content: center;
+  list-style: none;
+
+  @media (min-width: $mobile) {
+    justify-content: start;
+    grid-template-columns: repeat(auto-fill, 325px);
+    row-gap: 24px;
+    column-gap: 20px;
+  }
+
+  &--courses {
+    @media (min-width: $mobile) {
+      row-gap: 38px;
+    }
+  }
+}
+
+.products__item {
+  padding: 22px 22px 3px;
+
+  border-radius: 10px;
+  box-shadow: 0 0 29px rgba($black, 0.2);
+}
+
+.products__img {
+  margin-bottom: 7px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 9px;
+  }
+
+  &--courses {
+    margin-bottom: 14px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.products__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font: 700 25px/30px $body-font-family;
+
+  &--courses {
+    margin-bottom: 19px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.products__term {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 700;
+
+  color: $blue;
+
+  @media (max-width: $tablet) {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  @media (max-width: $mobile) {
+    line-height: 23px;
+  }
+}
+
+.products__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font: 500 19px/23px $body-font-family;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 8px;
+  }
+
+  &--courses {
+    margin-bottom: 29px;
+
+    @media (min-width: $desktop) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.products__description {
+  margin-top: 0;
+  margin-bottom: 22px;
+
+  font: 400 15px/18px $body-font-family;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 29px;
+  }
+}
+
+.products__link {
+  justify-content: center;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 19px;
+  padding-top: 9px;
+  padding-bottom: 5px;
+
+  font: 500 15px/20px $body-font-family;
+
+  @media (min-width: $desktop) {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+
+  &--courses {
+    padding-top: 11px;
+    padding-bottom: 7px;
+    border-radius: 11px;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,140 @@
+.review {
+  padding-top: 36px;
+
+  @media (max-width: $mobile) {
+    padding-top: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.review__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  line-height: 18px;
+
+  @media (max-width: $mobile) {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.review__stats {
+  position: relative;
+
+  padding-left: 2px;
+  padding-right: 39px;
+
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+
+  color: $main-color;
+
+  &::after {
+    content: "+";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    right: 0;
+    top: calc(50% - 12px);
+
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 17px;
+
+    color: $white;
+    background-color: $main-color;
+
+    cursor: pointer;
+  }
+
+  @media (max-width: $mobile) {
+    display: block;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 4px;
+
+    font-size: 15px;
+  }
+}
+
+.review__list {
+  display: flex;
+
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0 !important;
+
+  overflow-x: hidden !important;
+
+  list-style: none !important;
+
+  @media (max-width: $mobile) {
+    width: max-content;
+  }
+
+  .swiper-slide {
+    width: auto !important;
+  }
+
+}
+
+.review__item {
+  height: fit-content;
+  max-width: 309px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 8px;
+  padding-right: 31px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 11px rgba($black, 0.2);
+}
+
+.review__fullname {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.review__prof {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 700;
+
+  color: $gray;
+}
+
+.review__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  word-wrap: break-word;
+
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 700;
+}

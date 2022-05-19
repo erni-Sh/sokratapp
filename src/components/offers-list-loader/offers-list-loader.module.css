@@ -1,0 +1,12 @@
+.Wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.SwiperSlide {
+    display: flex;
+    height: auto;
+    padding: 20px 10px;
+    width: auto;
+}

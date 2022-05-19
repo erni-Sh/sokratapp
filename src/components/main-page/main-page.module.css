@@ -1,0 +1,8 @@
+.ContainerContent {
+    width: 1109px;
+    flex-grow: 1;
+}
+
+.ContainerSidebar {
+    width: 331px;
+}

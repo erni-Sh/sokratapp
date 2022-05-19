@@ -1,0 +1,26 @@
+.fieldset {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  border: none;
+}
+
+.fieldset--pay {
+  margin-bottom: 32px;
+}
+
+.fieldset__title {
+  margin-bottom: 14px;
+
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.fielset__input-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 13px;
+
+  list-style: none;
+}
